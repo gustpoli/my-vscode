@@ -1,0 +1,12 @@
+{
+    "workbench.iconTheme": "icons",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "chatgpt.gpt3.apiKey": "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",
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Dracula",
+    "terminal.integrated.env.windows": {},
+    "console-ninja.featureSet": "Community",
+    "bootstrapIntelliSense.version": "Bootstrap v5.3",
+    "window.zoomLevel": 1,
+    "files.autoSave": "afterDelay"
+}

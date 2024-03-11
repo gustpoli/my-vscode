@@ -1,0 +1,227 @@
+[
+    {
+        "identifier": {
+            "id": "bradlc.vscode-tailwindcss",
+            "uuid": "4db62a7c-7d70-419c-96d2-6c3a4dc77ea5"
+            
+        },
+        "displayName": "Tailwind CSS IntelliSense"
+    },
+    {
+        "identifier": {
+            "id": "dbaeumer.vscode-eslint",
+            "uuid": "583b2b34-2c1e-4634-8c0b-0b82e283ea3a"
+        },
+        "displayName": "ESLint"
+    },
+    {
+        "identifier": {
+            "id": "devsense.composer-php-vscode",
+            "uuid": "eed2a934-7bb6-4a5b-a29d-353077efd839"
+        },
+        "displayName": "Composer"
+    },
+    {
+        "identifier": {
+            "id": "devsense.intelli-php-vscode",
+            "uuid": "f83b9c6c-24dd-435c-a088-daff1769b0b8"
+        },
+        "displayName": "IntelliPHP - AI Autocomplete for PHP"
+    },
+    {
+        "identifier": {
+            "id": "devsense.phptools-vscode",
+            "uuid": "93916db4-e944-4c74-b68e-47f2834e9e93"
+        },
+        "displayName": "PHP"
+    },
+    {
+        "identifier": {
+            "id": "devsense.profiler-php-vscode",
+            "uuid": "6e4e2904-96c2-4c5c-8b78-23da062f2f9e"
+        },
+        "displayName": "PHP Profiler"
+    },
+    {
+        "identifier": {
+            "id": "dracula-theme.theme-dracula",
+            "uuid": "4e44877c-1c8d-4f9c-ba86-1372d0fbeeb1"
+        },
+        "displayName": "Dracula Official"
+    },
+    {
+        "identifier": {
+            "id": "ecmel.vscode-html-css",
+            "uuid": "aaee577c-f062-495a-9816-0cbd442f1d25"
+        },
+        "displayName": "HTML CSS Support"
+    },
+    {
+        "identifier": {
+            "id": "esbenp.prettier-vscode",
+            "uuid": "96fa4707-6983-4489-b7c5-d5ffdfdcce90"
+        },
+        "displayName": "Prettier - Code formatter"
+    },
+    {
+        "identifier": {
+            "id": "expo.vscode-expo-tools",
+            "uuid": "b2c4b5bf-9bda-4c81-96b6-d2f28401c4fb"
+        },
+        "displayName": "Expo Tools"
+    },
+    {
+        "identifier": {
+            "id": "formulahendry.auto-rename-tag",
+            "uuid": "6e440e71-8ed9-4f25-bb78-4b13096b8a03"
+        },
+        "displayName": "Auto Rename Tag"
+    },
+    {
+        "identifier": {
+            "id": "gruntfuggly.todo-tree",
+            "uuid": "261cac81-cd7b-4555-bb41-0c2d2bcd3e70"
+        },
+        "displayName": "Todo Tree"
+    },
+    {
+        "identifier": {
+            "id": "hossaini.bootstrap-intellisense",
+            "uuid": "7846dad3-dea1-40d3-a7f2-da368838d5fb"
+        },
+        "displayName": "Bootstrap IntelliSense"
+    },
+    {
+        "identifier": {
+            "id": "humao.rest-client",
+            "uuid": "dda49fd5-1f3b-4d25-bf61-4fc41905ede5"
+        },
+        "displayName": "REST Client"
+    },
+    {
+        "identifier": {
+            "id": "humy2833.ftp-simple",
+            "uuid": "a1c4713c-cd10-4fbb-9c13-c3adec03b40f"
+        },
+        "displayName": "ftp-simple"
+    },
+    {
+        "identifier": {
+            "id": "ms-ceintl.vscode-language-pack-pt-br",
+            "uuid": "3fd25437-acd9-42d7-ab19-581a69ce2dd9"
+        },
+        "displayName": "Portuguese (Brazil) Language Pack for Visual Studio Code"
+    },
+    {
+        "identifier": {
+            "id": "ms-vscode-remote.remote-containers",
+            "uuid": "93ce222b-5f6f-49b7-9ab1-a0463c6238df"
+        },
+        "displayName": "Dev Containers"
+    },
+    {
+        "identifier": {
+            "id": "ms-vscode-remote.remote-ssh",
+            "uuid": "607fd052-be03-4363-b657-2bd62b83d28a"
+        },
+        "displayName": "Remote - SSH"
+    },
+    {
+        "identifier": {
+            "id": "ms-vscode-remote.remote-ssh-edit",
+            "uuid": "bfeaf631-bcff-4908-93ed-fda4ef9a0c5c"
+        },
+        "displayName": "Remote - SSH: Editing Configuration Files"
+    },
+    {
+        "identifier": {
+            "id": "ms-vscode-remote.remote-wsl",
+            "uuid": "f0c5397b-d357-4197-99f0-cb4202f22818"
+        },
+        "displayName": "WSL"
+    },
+    {
+        "identifier": {
+            "id": "ms-vscode-remote.vscode-remote-extensionpack",
+            "uuid": "23d72dfc-8dd1-4e30-926e-8783b4378f13"
+        },
+        "displayName": "Remote Development"
+    },
+    {
+        "identifier": {
+            "id": "ms-vscode.remote-explorer",
+            "uuid": "11858313-52cc-4e57-b3e4-d7b65281e34b"
+        },
+        "displayName": "Remote Explorer"
+    },
+    {
+        "identifier": {
+            "id": "ms-vscode.remote-server",
+            "uuid": "105c0b3c-07a9-4156-a4fc-4141040eb07e"
+        },
+        "displayName": "Remote - Tunnels"
+    },
+    {
+        "identifier": {
+            "id": "msjsdiag.vscode-react-native",
+            "uuid": "b35cd5b4-18db-46f9-ba9e-06096c3b22d3"
+        },
+        "displayName": "React Native Tools"
+    },
+    {
+        "identifier": {
+            "id": "naumovs.color-highlight",
+            "uuid": "121396ad-85a1-45ec-9fd1-d95028a847f5"
+        },
+        "displayName": "Color Highlight"
+    },
+    {
+        "identifier": {
+            "id": "ritwickdey.liveserver",
+            "uuid": "b63c44fd-0457-4696-99e9-dbfdf70d77de"
+        },
+        "displayName": "Live Server"
+    },
+    {
+        "identifier": {
+            "id": "tal7aouy.icons",
+            "uuid": "dcd805cf-7bf1-458e-8739-26a6077c784f"
+        },
+        "displayName": "Icons"
+    },
+    {
+        "identifier": {
+            "id": "techer.open-in-browser",
+            "uuid": "fef63133-dae3-40fb-b81d-6da7617b4b1e"
+        },
+        "displayName": "open in browser"
+    },
+    {
+        "identifier": {
+            "id": "usernamehw.errorlens",
+            "uuid": "9d8c32ab-354c-4daf-a9bf-20b633734435"
+        },
+        "displayName": "Error Lens"
+    },
+    {
+        "identifier": {
+            "id": "wallabyjs.console-ninja",
+            "uuid": "6a994cdf-21a5-4e80-b0a5-601acdad9bf9"
+        },
+        "displayName": "Console Ninja"
+    },
+    {
+        "identifier": {
+            "id": "yoavbls.pretty-ts-errors",
+            "uuid": "1e149c89-8f97-447e-863d-1146f0ad1b70"
+        },
+        "displayName": "Pretty TypeScript Errors"
+    },
+    {
+        "identifier": {
+            "id": "zignd.html-css-class-completion",
+            "uuid": "7b71fc1b-190d-4f7d-95d1-93e422649b0a"
+        },
+        "displayName": "IntelliSense for CSS class names in HTML"
+    }
+]
