@@ -18,9 +18,9 @@ export default function ToolTip({text, position = "right", children, positionerC
     }
 
     return (
-        <div className={`group relative ${positionerClasses}`}>
+        <div className={` group relative ${positionerClasses}`}>
             {children}
-            <span className={`z-30 absolute hidden group-hover:flex items-center gap-1 rounded border border-[#6272a4] p-1 px-2 bg-[#282a36] text-xs text-nowrap text-[#f8f8f2] ${positionClasses[position]} ${className}`}>
+            <span className={`tooltip [@media(hover: none)]:bg-red-50 z-30 absolute hidden group-hover:flex items-center gap-1 rounded border border-[#6272a4] p-1 px-2 bg-[#282a36] text-xs text-nowrap text-[#f8f8f2] ${positionClasses[position]} ${className}`}>
                 {text}
             </span>
         </div>

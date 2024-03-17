@@ -19,15 +19,15 @@ export default function FilePage({title, path, children, className = ""} : FileP
 
         <div className="flex-auto flex flex-col">
             <div className="flex justify-between items-center pe-3 w-full min-h-9 bg-[#191a21] select-none">
-                <button className="flex items-center gap-2 border-t border-[#94527e] px-2 h-full text-sm bg-[#282a36] text-[#f8f8f2]" disabled>
+                <span className="flex items-center gap-2 border-t border-[#94527e] px-2 h-full text-sm bg-[#282a36] text-[#f8f8f2]">
                     <FileIcon text={title} />
                     <span>{title}</span>
-                        <Link href="/" className="rounded p-[2px] hover:bg-[#33343b]">
+                        <Link href="/" className="rounded p-[2px] hover:bg-[#33343b]" aria-label="Link to the the home page">
                             <ToolTip text="Close">
                                 <XIcon size={16} className=" text-[#c5c5c5]" />
                             </ToolTip>
                         </Link> 
-                </button>
+                </span>
                 <div className="flex gap-1 text-[#c5c5c5]">
                     <Button variant="ghost" disabled>
                         <GitCompareArrowsIcon size={16}/>

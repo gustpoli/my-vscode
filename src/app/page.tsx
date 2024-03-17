@@ -14,10 +14,6 @@ export default function Home() {
           <span className="flex-1 flex justify-end items-center">Toggle explorer</span>
           <span className="flex-1 flex items-center gap-1 "><Key>Ctrl</Key> + <Key>b</Key></span>
         </div>      
-        <div className=" flex items-center gap-2">
-          <span className="flex-1 flex justify-end items-center">Toggle full screen</span>
-          <span className="flex-1 flex items-center gap-1"><Key>F11</Key></span>
-        </div>   
       </div>
     </main>
   );

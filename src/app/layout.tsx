@@ -7,12 +7,16 @@ import VSCodeIcon from "@/components/Icons/VSCodeIcon";
 import NavMenu from "@/components/layout/NavMenu";
 import { NavCommandButton } from "@/components/layout/NavCommand";
 import BottomOptions from "@/components/layout/BottomOptions";
+import WindowButtons from "@/components/layout/WindowButtons";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "My VSCode - Gustavo Policarpo R Schuaste",
   description: "A Visual Studio Code replica showcasing my settings, extensions, and setup details.",
+  icons: {
+    icon : "/images/myvscodeconfigs.png"
+  }
 };
 
 export default function RootLayout({
@@ -30,11 +34,7 @@ export default function RootLayout({
                 <VSCodeIcon size={20} />
               </div>
                 <NavCommandButton />
-              <div className="flex gap-1 w-10 h-min">
-                <button className="rounded-full w-[10px] h-[10px] bg-green-600" disabled/>
-                <button className="rounded-full w-[10px] h-[10px] bg-yellow-600" disabled/>
-                <button className="rounded-full w-[10px] h-[10px] bg-red-600" disabled/>
-              </div>
+                <WindowButtons />
             </div>
             <div className=" flex flex-1" style={{height: "calc(100% - 64px)"}}>
               <NavMenu />

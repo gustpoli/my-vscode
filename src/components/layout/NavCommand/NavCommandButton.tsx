@@ -127,7 +127,7 @@ export default function NavCommandButton(){
                     <span className=" text-sm text-nowrap text-white select-none">my-vscode-configs</span>
                 </button>
             </ToolTip>
-            <div className={`${open ? "flex " : "hidden "} z-10 absolute top-[-1px] left-1/2 translate-x-[-50%] flex flex-col rounded p-2 max-w-[150%]: w-96 bg-[#21232d] shadow-md cursor-auto`}>
+            <div className={`${open ? "flex " : "hidden "} z-40 absolute top-[-1px] left-1/2 translate-x-[-50%] flex flex-col rounded p-2 max-w-[150%]: w-96 bg-[#21232d] shadow-md cursor-auto`}>
                 <input ref={inputRef} className="rounded border border-[#42a5f5] py-1 px-2 bg-transparent text-sm " type="text" placeholder="Search file by name" value={search} onChange={(e) => setSearch(e.currentTarget.value)}/>
 
                 <div className="flex flex-col mt-2" onClick={() => {setOpen(false)}}>

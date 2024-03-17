@@ -66,3 +66,14 @@ body > section {
     background: #3d3e41c5;
   }
 }
+
+@media (hover: none) {
+  .tooltip{
+    display: none !important;
+  }
+}
+
+*:disabled{
+  opacity: 0.5;
+  pointer-events: none;
+}

@@ -13,7 +13,7 @@ export default function Page(){
 
     return(
         <FilePage title="mei.jpg" path={["others"]} className="flex justify-center items-center py-2 px-3">
-            <img src="/images/mei.jpg" alt="" className=" h-4/5"/>
+            <img src="/images/mei.webp" alt="" className=" h-4/5"/>
         </FilePage>
     )
 

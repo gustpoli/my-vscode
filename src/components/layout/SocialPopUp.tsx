@@ -28,7 +28,7 @@ export default function SocialPopUp({children} : {children?: React.ReactNode}){
             <div onClick={() => setIsOpen(!isOpen)}>
             {children}
             </div>
-            <div className={`${isOpen ? "flex " : "hidden "} absolute bottom-0 left-full z-10 flex-col gap-1 py-1 rounded min-w-max bg-[#343746] shadow-lg text-xs`}>
+            <div className={`${isOpen ? "flex " : "hidden "} absolute bottom-0 left-full z-40 flex-col gap-1 py-1 rounded min-w-max bg-[#343746] shadow-lg text-xs`}>
                 <div className=" flex items-center gap-2 px-3">
                     <img src="/images/mei.webp" alt="" className=" rounded-full w-6" />
                     <span>gustpoli</span>
