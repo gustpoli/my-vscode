@@ -23,7 +23,7 @@ export default function HtmlFormatedMarkdowm({text}: {text: string}){
 
         return (
             <span className="relative inline-flex" key={lineNumber}>
-                <span className="flex justify-end min-w-8 mr-2 text-[#6272a4] select-none">{lineNumber  }</span>
+                <span className="flex justify-end min-w-8 mr-2 text-[var(--theme-nav-option)] select-none">{lineNumber}</span>
                 <span>
                     <span className={`${classes}`}>{line}</span>
                 </span> 

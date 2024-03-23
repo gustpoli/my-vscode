@@ -11,14 +11,14 @@ export default function BottomOptions(){
     return (
         <>
             <div className=" flex gap-1">
-                <button className="h-full p-1 px-2 bg-[#c5a0fa] text-[#191a21] hover:text-white " disabled aria-label="Open the remote window options">
+                <button className="h-full p-1 px-2 bg-[var(--theme-bottom-button)] text-[var(--theme-bottom-button-foreground)] hover:text-[var(--theme-foreground)] " disabled aria-label="Open the remote window options">
                   <ChevronsRightLeftIcon size={16}/>
                 </button>
-                <Button className=" rounded-none text-[#f8f8f2]" disabled aria-label="Open the github branch selector">
+                <Button className=" rounded-none text-[var(--theme-foreground)]" disabled aria-label="Open the github branch selector">
                   <GitBranchIcon size={16} />
                   master*
                 </Button>
-                <Button className=" rounded-none text-[#f8f8f2]" disabled aria-label="Open the console problems option">
+                <Button className=" rounded-none text-[var(--theme-foreground)]" disabled aria-label="Open the console problems option">
                   <XCircleIcon size={16} />
                   0
                   <AlertTriangleIcon size={16} />
@@ -27,17 +27,17 @@ export default function BottomOptions(){
               </div>
               <div className="flex gap-1">
                 {path !== "/" && <>
-                    <Button className=" rounded-none text-[#f8f8f2]" disabled aria-label="Open the select identation popup">
+                    <Button className=" rounded-none text-[var(--theme-foreground)]" disabled aria-label="Open the select identation popup">
                         Spaces: {path === "/setup" ? '2' : '4'}
                       </Button>
-                    <Button className=" rounded-none text-[#f8f8f2]" disabled aria-label="Open the select encoding popup">UTF-8</Button>
-                    <Button className=" rounded-none text-[#f8f8f2]" disabled aria-label="Open to select end of line sequence">LF</Button>
-                    <Button className=" rounded-none text-[#f8f8f2]" disabled aria-label="Opon the prettier output on vscode console">
+                    <Button className=" rounded-none text-[var(--theme-foreground)]" disabled aria-label="Open the select encoding popup">UTF-8</Button>
+                    <Button className=" rounded-none text-[var(--theme-foreground)]" disabled aria-label="Open to select end of line sequence">LF</Button>
+                    <Button className=" rounded-none text-[var(--theme-foreground)]" disabled aria-label="Opon the prettier output on vscode console">
                       <CheckCheckIcon  size={16} />
                       Prettier
                     </Button>
                 </>}
-                <Button className=" rounded-none text-[#f8f8f2]" disabled aria-label="Open/close the notifications popup menu"> 
+                <Button className=" rounded-none text-[var(--theme-foreground)]" disabled aria-label="Open/close the notifications popup menu"> 
                   <BellIcon size={16}/>
                 </Button>
               </div>

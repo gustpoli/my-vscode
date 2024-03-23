@@ -17,7 +17,7 @@ export default function ExplorerMenu(){
     })
 
     return(
-        <nav className=" flex flex-col flex-auto max-w-56 min-w-32 bg-[#21222c] select-none">
+        <nav className=" flex flex-col flex-auto max-w-56 min-w-32 bg-[var(--theme-nav-menu)] select-none">
             <div className=" flex justify-between items-center px-3 min-h-9">
                 <span className=" text-xs">EXPLORER</span>
                 <ExplorerPopUp 
@@ -50,7 +50,7 @@ export default function ExplorerMenu(){
             }
             {activeAccordions.timeline && 
             <NavAccordionButton title="TIMELINE">
-                <div className="flex  justify-between items-center gap- border border-transparent p-1 ps-3 w-full hover:bg-[#313341] active:border-[#6272a4]">
+                <div className="flex  justify-between items-center gap- border border-transparent p-1 ps-3 w-full hover:bg-[var(--theme-nav-menu-hover)] active:border-[var(--theme-accent)]">
                     <div className=" flex items-center gap-2">
                         <div className=" rounded-full border-2 w-[9px] h-[9px] " />
                         <div className=" flex items-center gap-1">
@@ -58,9 +58,9 @@ export default function ExplorerMenu(){
                             <span className=" text-xs font-medium">extensions.js</span>
                         </div>
                     </div>
-                    <span className="text-xs text-[#929398]">23/02/24</span>
+                    <span className="text-xs text-[var(--theme-muted)]">23/02/24</span>
                 </div>     
-                <div className="flex  justify-between items-center gap-2 border border-transparent p-1 ps-3 w-full hover:bg-[#313341] active:border-[#6272a4]">
+                <div className="flex  justify-between items-center gap-2 border border-transparent p-1 ps-3 w-full hover:bg-[var(--theme-nav-menu-hover)] active:border-[var(--theme-accent)]">
                     <div className=" flex items-center gap-2">
                         <div className=" rounded-full border-2 w-[9px] h-[9px] " />
                         <div className=" flex items-center gap-1">
@@ -68,9 +68,9 @@ export default function ExplorerMenu(){
                             <span className=" text-xs font-medium">settings.js</span>
                         </div>
                     </div>
-                    <span className="text-xs text-[#929398]">23/02/24</span>
+                    <span className="text-xs text-[var(--theme-muted)]">23/02/24</span>
                 </div>    
-                <div className="flex  justify-between items-center gap-2 border border-transparent p-1 ps-3 w-full hover:bg-[#313341] active:border-[#6272a4]">
+                <div className="flex  justify-between items-center gap-2 border border-transparent p-1 ps-3 w-full hover:bg-[var(--theme-nav-menu-hover)] active:border-[var(--theme-accent)]">
                     <div className=" flex items-center gap-2">
                         <div className=" rounded-full border-2 w-[9px] h-[9px] " />
                         <div className=" flex items-center gap-1">
@@ -78,7 +78,7 @@ export default function ExplorerMenu(){
                             <span className=" text-xs font-medium">setup.md</span>
                         </div>
                     </div>
-                    <span className="text-xs text-[#929398]">23/02/24</span>
+                    <span className="text-xs text-[var(--theme-muted)]">23/02/24</span>
                 </div>    
             </NavAccordionButton>
             }

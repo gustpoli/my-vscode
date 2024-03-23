@@ -6,7 +6,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
 export default function Button({variant = "ghost", className = "", children, ...rest}: ButtonProps){
 
     const variantsClasses: {[key: string]: string} = {
-        "ghost": "rounded border-0 p-1 bg-transparent text-[#c5c5c5] fill-[#c5c5c5] hover:bg-[#35363c] active:bg-[#383a42] active:text-white"
+        "ghost": "rounded border-0 p-1 bg-transparent text-[var(--theme-foreground)] fill-[var(--theme-foreground)] hover:bg-[var(--theme-hover)] active:bg-[var(--theme-hover2)] active:text-white"
     }
 
     return (

@@ -23,13 +23,13 @@ export default function NavAccordionFolder({title = "", defaultOpen = false, dis
         paddingInlineStart: `${12*(nested)}px`
     }
 
-    const before = "before:absolute before:top-[26px] before:group-hover:block before:hidden before:ms-[6px] before:h-[calc(100%-32px)] before:w-[1px] before:bg-[#40424a]"
+    const before = "before:absolute before:top-[26px] before:group-hover:block before:hidden before:ms-[6px] before:h-[calc(100%-32px)] before:w-[1px] before:bg-[var(--theme-muted)]"
 
     return (
         <NavAccordionFolderContext.Provider value={parentOpen && open}>
             <div className="group relative">
                 <button 
-                    className={` flex items-center gap-1 border border-transparent w-full p-1 hover:bg-[#313341] active:bg-[rgb(98,114,164,0.25)] active:border-[#6272a4] ${disabled ? "pointer-events-none" : ""} ${open ? before : ""}`} 
+                    className={` flex items-center gap-1 border border-transparent w-full p-1 hover:bg-[var(--theme-nav-menu-hover)] active:bg-[rgb(98,114,164,0.25)] active:border-[var(--theme-accent)] ${disabled ? "pointer-events-none" : ""} ${open ? before : ""}`} 
                     style={style} 
                     onClick={() => setOpen(!open)} disabled={disabled}
                     tabIndex={parentOpen ? 0 : -1}

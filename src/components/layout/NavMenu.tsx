@@ -32,7 +32,7 @@ export default function NavMenu(){
 
     return (
         <>
-        <nav className="flex flex-col justify-between min-w-12 bg-[#343746] select-none">
+        <nav className="flex flex-col justify-between min-w-12 bg-[var(--theme-nav)] select-none">
             <div className="flex flex-col">
                 <ToolTip text="Explorer (Ctrl + b)" position="right">
                     <NavOption active={active} onClick={() => setActive(!active)} aria-label="Open/close the files explorer menu">

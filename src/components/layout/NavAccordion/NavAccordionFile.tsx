@@ -19,7 +19,7 @@ export default function NavAccordionFile({href = "", title = "", nested = 1, dis
 
         return (
         <Link href={href}  tabIndex={-1}>
-            <button className={` group flex items-center gap-1 border border-transparent w-full p-1 hover:bg-[#313341] active:bg-[rgb(98,114,164,0.25)] active:border-[#6272a4] ${disabled ? "pointer-events-none" : ""}`} style={style} disabled={disabled} tabIndex={!disabled ? 0 : -1}>
+            <button className={` group flex items-center gap-1 border border-transparent w-full p-1 hover:bg-[var(--theme-nav-menu-hover)] active:bg-[rgb(98,114,164,0.25)] active:border-[var(--theme-accent)] ${disabled ? "pointer-events-none" : ""}`} style={style} disabled={disabled} tabIndex={!disabled ? 0 : -1}>
                 <FileIcon size={16} text={title}/>
                 <span className=" text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis">{title}</span>
             </button>

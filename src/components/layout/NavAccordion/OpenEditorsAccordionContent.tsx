@@ -13,8 +13,8 @@ export default function OpenEditorsAccordionContent(){
     return (
     <>
         {path === "/extensions" &&
-        <div className="ps-5 flex items-center gap-1 border border-transparent p-1 w-full bg-[#313341] active:border-[#6272a4]">
-            <Link href="/" className="rounded hover:bg-[#3e404a]" tabIndex={parentOpen ? 0 : -1}>
+        <div className="ps-5 flex items-center gap-1 border border-transparent p-1 w-full bg-[var(--theme-background-light)] active:border-[var(--theme-accent)]">
+            <Link href="/" className="rounded hover:bg-[var(--theme-hover)]" tabIndex={parentOpen ? 0 : -1}>
                 <XIcon size={18}/>   
             </Link>
             <div className=" flex items-center gap-1">
@@ -23,8 +23,8 @@ export default function OpenEditorsAccordionContent(){
             </div>
         </div>                    }
         {path === "/settings" &&
-        <div className="ps-5 flex items-center gap-1 border border-transparent p-1 w-full bg-[#313341] active:border-[#6272a4]">
-            <Link href="/" className="rounded hover:bg-[#3e404a]" tabIndex={parentOpen ? 0 : -1}>
+        <div className="ps-5 flex items-center gap-1 border border-transparent p-1 w-full bg-[var(--theme-background-light)] active:border-[var(--theme-accent)]">
+            <Link href="/" className="rounded hover:bg-[var(--theme-hover)]" tabIndex={parentOpen ? 0 : -1}>
                 <XIcon size={18}/>   
             </Link>
             <div className=" flex items-center gap-1">
@@ -33,8 +33,8 @@ export default function OpenEditorsAccordionContent(){
             </div>
         </div>                            }
         {path === "/setup" &&
-        <div className="ps-5 flex items-center gap-1 border border-transparent p-1 w-full bg-[#313341] active:border-[#6272a4]">
-            <Link href="/" className="rounded hover:bg-[#3e404a]" tabIndex={parentOpen ? 0 : -1}>
+        <div className="ps-5 flex items-center gap-1 border border-transparent p-1 w-full bg-[var(--theme-background-light)] active:border-[var(--theme-accent)]">
+            <Link href="/" className="rounded hover:bg-[var(--theme-hover)]" tabIndex={parentOpen ? 0 : -1}>
                 <XIcon size={18}/>   
             </Link>
             <div className=" flex items-center gap-1">
@@ -44,8 +44,8 @@ export default function OpenEditorsAccordionContent(){
         </div>                        
         }
         {path === "/mei" &&
-        <div className="ps-5 flex items-center gap-1 border border-transparent p-1 w-full bg-[#313341] active:border-[#6272a4]">
-            <Link href="/" className="rounded hover:bg-[#3e404a]" tabIndex={parentOpen ? 0 : -1}>
+        <div className="ps-5 flex items-center gap-1 border border-transparent p-1 w-full bg-[var(--theme-background-light)] active:border-[var(--theme-accent)]">
+            <Link href="/" className="rounded hover:bg-[var(--theme-hover)]" tabIndex={parentOpen ? 0 : -1}>
                 <XIcon size={18}/>   
             </Link>
             <div className=" flex items-center gap-1">

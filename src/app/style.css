@@ -1,0 +1,118 @@
+.dracula-official-theme{
+    --theme-background: #282a36;
+    --theme-background-dark: #1c1d26;
+    --theme-backgroud-light: #343746;
+    --theme-foreground: #e6e6e6;
+    --theme-border: transparent;
+    --theme-hover: #33343b;
+    --theme-hover2: #3e404a;
+    --theme-muted: #929398;
+    --theme-accent: #6272a4;
+    --theme-accent2: #9e5b8b; 
+
+    --theme-top: #252631;
+    --theme-nav: #343746;
+    --theme-nav-option: #627298;
+    --theme-nav-selected: #3c3d51;
+    --theme-nav-menu: #21222c;
+    --theme-nav-menu-hover: #313341;
+
+    --theme-bottom: #23242f;
+    --theme-bottom-button: #c5a0fa;
+    --theme-bottom-button-foreground: #191a21;
+    
+    --theme-popup-bg: #343746;
+    --theme-popup-border: transparent;
+    --theme-popup-option-hover: #44475a;
+
+    --theme-tooltip-bg: #282a36;
+    --theme-tooltip-border: #6272a4;
+
+    --theme-page-background: #191a21;
+    --theme-page-selected: #9e5b8b;
+
+    --bg-gradient: radial-gradient(circle, #44475c, #5e506c);
+}
+
+.min-darkest-dracula-theme{
+    --theme-background: #111111;
+    --theme-background-dark: #0c0c0c;
+    --theme-backgroud-light: #161616;
+    --theme-foreground: #ebf8f2;
+    --theme-border: #343434;
+    --theme-hover: #2a2b2b;
+    --theme-hover: #37393b;
+    --theme-muted: #929398;
+    --theme-accent: #bd93f9;
+    --theme-accent2: #ffffff; 
+
+    --theme-top: #111111;
+    --theme-nav: #111111;
+    --theme-nav-option: #606164;
+    --theme-nav-selected: #111111;
+    --theme-nav-menu: #141414;
+    --theme-nav-menu-hover: #27292b;
+
+    --theme-navcommand-input: #343434;
+
+    --theme-bottom: #111111;
+    --theme-bottom-button: #111111;
+    --theme-bottom-button-foreground: #ebf8f2;
+    
+    --theme-popup-bg: #161616;
+    --theme-popup-border: #343434;
+    --theme-popup-option-hover: #2a2b2b;
+
+    --theme-tooltip-bg: #161616;
+    --theme-tooltip-border: #343434;
+
+    --theme-page-background: #111111;
+    --theme-page-selected: #111111;
+    
+    --bg-gradient: radial-gradient(circle, #bd93f9 -150%, #343434 100%);
+}
+
+
+*:focus{
+    outline-color: var(--theme-tooltip-border);
+    outline-width: 1px;
+    outline-offset: -1px;
+    outline-style: solid;
+  }
+  
+  body {
+    background: var(--bg-gradient);
+  }
+  
+  
+  body > section {
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background-color: #4d4e5065 ;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #3d3e41c5;
+    }
+  }
+  
+  @media (hover: none) {
+    .tooltip{
+      display: none !important;
+    }
+  }
+  
+  *:disabled{
+    opacity: 0.5;
+    pointer-events: none;
+  }

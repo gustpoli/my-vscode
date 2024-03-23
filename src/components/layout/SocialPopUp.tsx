@@ -28,37 +28,37 @@ export default function SocialPopUp({children} : {children?: React.ReactNode}){
             <div onClick={() => setIsOpen(!isOpen)}>
             {children}
             </div>
-            <div className={`${isOpen ? "flex " : "hidden "} absolute bottom-0 left-full z-40 flex-col gap-1 py-1 rounded min-w-max bg-[#343746] shadow-lg text-xs`}>
+            <div className={`${isOpen ? "flex " : "hidden "} absolute bottom-0 left-full z-40 flex-col gap-1 py-1 rounded border border-[var(--theme-popup-border)] min-w-max bg-[var(--theme-popup-bg)] shadow-lg text-xs`}>
                 <div className=" flex items-center gap-2 px-3">
                     <img src="/images/mei.webp" alt="" className=" rounded-full w-6" />
                     <span>gustpoli</span>
                 </div>
-                <hr className="border-[#606060]" />
+                <hr className="border-[var(--theme-foreground)] opacity-25" />
                 <div className="flex flex-col mx-1">
                     <a href="https://www.instagram.com/gustpoli/"   
                         target="_blank"
-                        className=" flex items-center gap-2 rounded p-1 px-3 hover:bg-[#44475a]">
+                        className=" flex items-center gap-2 rounded p-1 px-3 hover:bg-[var(--theme-popup-option-hover)]">
                         <InstagramIcon  size={16}/>
                         instagram
                     </a>
                     <a href="https://github.com/gustpoli"
                         target="_blank"
                         rel="noreferrer" 
-                        className=" flex items-center gap-2 rounded p-1 px-3 hover:bg-[#44475a]">                        
+                        className=" flex items-center gap-2 rounded p-1 px-3 hover:bg-[var(--theme-popup-option-hover)]">                        
                         <GithubIcon  size={16}/>
                         github
                     </a>    
                     <a href="mailto:gustavopolicarporsch@gmail.com"
                         target="_blank"
                         rel="noreferrer" 
-                        className=" flex items-center gap-2 rounded p-1 px-3 hover:bg-[#44475a]">
+                        className=" flex items-center gap-2 rounded p-1 px-3 hover:bg-[var(--theme-popup-option-hover)]">
                         <MailIcon size={16}/>
                         email
                     </a>
                     <a href="https://www.linkedin.com/in/gustavo-policarpo-ricardo-schuaste-6a365b239"
                         target="_blank"
                         rel="noreferrer" 
-                        className=" flex items-center gap-2 rounded p-1 px-3 hover:bg-[#44475a]">
+                        className=" flex items-center gap-2 rounded p-1 px-3 hover:bg-[var(--theme-popup-option-hover)]">
                         <LinkedinIcon size={16}/>
                         linkedin
                     </a>

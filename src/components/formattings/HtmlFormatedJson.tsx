@@ -28,7 +28,7 @@ export default function HtmlFormatedJson({text} : {text: string}) {
 
         return (
             <span className={`relative inline-flex `} key={counter}>
-                <span className="flex justify-end min-w-8 mr-2 text-[#6272a4] select-none">{counter}</span>
+                <span className="flex justify-end min-w-8 mr-2 text-[var(--theme-nav-option)] select-none">{counter}</span>
                 <span>
                     <span style={{color: `${parts.length === 2 ? "#8be9ff" : color}`}}>{parts[0]}</span>
                     
