@@ -1,0 +1,15 @@
+{
+  "vscode": {
+    "files": ["extensions.json", "settings.json"]
+  },
+  "others": {
+    "images": {
+      "my-cats": {
+        "files": ["mei.png"]
+      },
+      "files": ["me.png"]
+    },
+    "files": ["setup.md"]
+  },
+  "files": ["README.md"]
+} 
