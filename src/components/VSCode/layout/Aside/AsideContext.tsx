@@ -14,23 +14,22 @@ type AsideContextType = {
 export const AsideContext = createContext<AsideContextType | undefined>(undefined);
 
 export function AsideContextProvider({ children }: { children: React.ReactNode }) {
-  
-  const [isOptionOpen, setIsOptionOpen] = useState<boolean>(() => {
-    const asideData = localStorage.getItem("asideData")
-    return asideData ? JSON.parse(asideData).isOptionOpen : false
-  })
-  const [optionSelected, setOptionSelected] = useState<AsideOptionsType>(() => {
-    const asideData = localStorage.getItem("asideData")
-    return asideData ? JSON.parse(asideData).optionSelected : false
-  })
+  const [isOptionOpen, setIsOptionOpen] = useState<boolean>(false);
+  const [optionSelected, setOptionSelected] = useState<AsideOptionsType>("explorer");
+
+    useEffect(() => {
+    const asideData = localStorage.getItem("asideData");
+    if (asideData) {
+      const parsedData = JSON.parse(asideData);
+      setIsOptionOpen(parsedData.isOptionOpen);
+      setOptionSelected(parsedData.optionSelected);
+    }
+  }, []);
 
   useEffect(() => {
-    localStorage.setItem("asideData", JSON.stringify({
-      isOptionOpen,
-      optionSelected
-    }))
-  }, [optionSelected, isOptionOpen])
-  
+    localStorage.setItem("asideData", JSON.stringify({ isOptionOpen, optionSelected }));
+  }, [isOptionOpen, optionSelected]);
+
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.ctrlKey && event.key === "b") {
@@ -55,4 +54,4 @@ export function useAsideContext() {
   if (context === undefined)
     throw new Error("useAsideContext must be used within an AsideContextProvider");
   return context;
-};  
+};

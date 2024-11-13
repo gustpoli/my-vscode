@@ -10,16 +10,19 @@ type WindowContextType = {
 export const WindowContext = createContext<WindowContextType | undefined>(undefined);
 
 export function WindowContextProvider({ children }: { children: React.ReactNode }) {
-  
-  const [isMaximized, setIsMaximized] = useState<boolean>(() => {
-    const savedState = localStorage.getItem("isMaximized")
-    return savedState ? JSON.parse(savedState) : false
-  })
+  const [isMaximized, setIsMaximized] = useState<boolean>(false);
 
   useEffect(() => {
-    localStorage.setItem("isMaximized", JSON.stringify(isMaximized))
-  }, [isMaximized])
-  
+    const savedState = localStorage.getItem("isMaximized");
+    if (savedState) {
+      setIsMaximized(JSON.parse(savedState));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("isMaximized", JSON.stringify(isMaximized));
+  }, [isMaximized]);
+
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.shiftKey && event.key === "F11") {
@@ -30,7 +33,7 @@ export function WindowContextProvider({ children }: { children: React.ReactNode 
   
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [setIsMaximized])
+  }, [setIsMaximized]);
 
   return (
     <WindowContext.Provider value={{ isMaximized, setIsMaximized }}>
@@ -44,4 +47,4 @@ export function useWindowContext() {
   if (context === undefined)
     throw new Error("useWindowContext must be used within an WindowContextProvider");
   return context;
-};  
+};
