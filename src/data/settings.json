@@ -1,13 +1,25 @@
 {
-  "workbench.colorTheme": "Min Darkest Dracula",
-  "workbench.iconTheme": "icons",
-  "workbench.sideBar.location": "right",
-  "files.autoSave": "afterDelay",
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "editor.minimap.enabled": false,
-  "window.zoomLevel": 1,
-  "workbench.editor.customLabels.patterns": {
-    "**/{layout,page}.tsx": "${dirname} ${filename}"
-  }
+	"workbench.colorTheme": "Min Darkest Dracula",
+	"workbench.iconTheme": "icons",
+	"workbench.sideBar.location": "right",
+	"files.autoSave": "afterDelay",
+	"editor.tabSize": 2,
+	"editor.wordWrap": "on",
+	"diffEditor.useInlineViewWhenSpaceIsLimited": false,
+	"editor.minimap.enabled": false,
+	"workbench.editor.customLabels.patterns": {
+			"**/{layout,page}.tsx": "${dirname} ${filename}"
+	},
+	"window.zoomLevel": 1,
+	"editor.stickyScroll.enabled": false,
+	"editor.renderWhitespace": "none",
+	"editor.linkedEditing": true,
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"editor.cursorSurroundingLines": 100,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"workbench.statusBar.visible": false,
+	"workbench.tree.enableStickyScroll": false,
+	"workbench.tree.renderIndentGuides": "none",
+	"explorer.compactFolders": false
 }
