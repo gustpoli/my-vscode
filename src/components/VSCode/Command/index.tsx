@@ -144,7 +144,7 @@ export default function Command(){
   }, [commandSearch, commandShowType])
 
   return isCommandOpen && (
-    <div ref={command} className=" z-10 absolute top-0 left-1/2 -translate-x-1/2 p-2">
+    <div ref={command} className=" z-10 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 p-2">
       <div className=" rounded-md w-[650px] h-[400px] bg-background shadow-md shadow-black">
         <div className=" p-2">
           <input 

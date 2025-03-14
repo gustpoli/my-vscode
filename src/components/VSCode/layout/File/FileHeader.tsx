@@ -5,6 +5,7 @@ import { getFileByPath } from "@/lib/files"
 import { Icon } from "@iconify/react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import settings from "@/data/settings.json"
 
 export default function FileHeader(){
 
@@ -49,25 +50,27 @@ export default function FileHeader(){
           </button>
         </div>
       </div>
-      <div className=" flex items-center ps-4 py-1 text-muted-foreground bg-background">
-        {pathParts.map((pathPart, index) => 
-          index !== pathParts.length-1
-            ? (
-              <span key={`${index}-${pathPart}`} className=" inline-flex items-center">
-                <span>
-                  {pathPart}
-                </span>
-              <Icon icon="codicon:chevron-right" className=" mx-0.5" />
-            </span>
-          )
-          : (
-            <span key={`${index}-${pathPart}`} className=" inline-flex items-center gap-1.5">
-              <FileExtensionIcon fileName={file.name} className=" text-lg " />
-              {file.name}
-            </span>
-          )
-        )}
-      </div>
+			{settings["breadcrumbs.enabled"] && (
+				<div className=" flex items-center ps-4 py-1 text-muted-foreground bg-background">
+					{pathParts.map((pathPart, index) => 
+						index !== pathParts.length-1
+							? (
+								<span key={`${index}-${pathPart}`} className=" inline-flex items-center">
+									<span>
+										{pathPart}
+									</span>
+								<Icon icon="codicon:chevron-right" className=" mx-0.5" />
+							</span>
+						)
+						: (
+							<span key={`${index}-${pathPart}`} className=" inline-flex items-center gap-1.5">
+								<FileExtensionIcon fileName={file.name} className=" text-lg " />
+								{file.name}
+							</span>
+						)
+					)}
+				</div>
+			)}
     </div>  
   )
 

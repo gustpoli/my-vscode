@@ -8,6 +8,8 @@ import { CommandContextProvider } from "./Command/CommandContextProvider";
 import Command from "./Command";
 import File from "./layout/File";
 
+import settings from "@/data/settings.json"
+
 export default function VSCode({children}: { children: React.ReactNode }){
 
   return (
@@ -23,7 +25,7 @@ export default function VSCode({children}: { children: React.ReactNode }){
               </File>
               <Aside />
             </div>
-            <Footer />
+            {settings["workbench.statusBar.visible"] && <Footer />}
           </Window>
         </CommandContextProvider>
       </AsideContextProvider>

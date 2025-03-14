@@ -46,11 +46,11 @@ export default function AsideOptionExplorer(){
       >
         {files && renderFileStructure(files as FileStructure)}
       </AsideCollapsable>
-      <AsideCollapsable
+      {/* <AsideCollapsable
         name="outline"
         disabled
       >
-      </AsideCollapsable>
+      </AsideCollapsable> */}
       <AsideCollapsable
         name="timeline"
         disabled
