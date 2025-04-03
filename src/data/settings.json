@@ -20,6 +20,7 @@
 	"workbench.tree.enableStickyScroll": false,
 	"workbench.tree.renderIndentGuides": "none",
 	"workbench.statusBar.visible": false,
+	"workbench.startupEditor": "none",
 	"workbench.sideBar.location": "right",
 	"workbench.editor.customLabels.patterns": {
 		"**/{layout,page}.tsx": "${dirname} ${filename}"
